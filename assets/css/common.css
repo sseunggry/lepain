@@ -2113,6 +2113,12 @@ input::placeholder, textarea::placeholder {
 		display: block;
 	}
 
+	.header .util-btn .ico-menu a {
+		margin-left: 1.33vw;
+		width: 4.00vw;
+		height: 4.00vw;
+	}
+	
 	.header .nav {
 		padding: 0 0 8.00vw 8.00vw;
 	}

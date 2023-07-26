@@ -39,7 +39,7 @@
 .table-top .search .ico-search {
 	margin-left: 10px;
 	display: inline-block;
-	background: url("./img/common/ico-search.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-search.png") no-repeat center/100% auto;
 	width: 16px;
 	height: 16px;
 	vertical-align: middle;
@@ -65,7 +65,7 @@
 	margin-bottom: 30px;
 	width: 79px;
 	height: 79px;
-	background: url("./img/common/ico-no-list.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-no-list.png") no-repeat center/100% auto;
 }
 
 .paging {
@@ -87,19 +87,19 @@
 }
 
 .paging button.prev-more {
-	background: url("./img/common/ico-arrow-left2.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-arrow-left2.png") no-repeat center/100% auto;
 }
 
 .paging button.prev {
-	background: url("./img/common/ico-arrow-left.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-arrow-left.png") no-repeat center/100% auto;
 }
 
 .paging button.next-more {
-	background: url("./img/common/ico-arrow-right2.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-arrow-right2.png") no-repeat center/100% auto;
 }
 
 .paging button.next {
-	background: url("./img/common/ico-arrow-right.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-arrow-right.png") no-repeat center/100% auto;
 }
 
 .paging .page-list {
@@ -155,13 +155,13 @@
 	margin-left: auto;
 	width: 26px;
 	height: 26px;
-	background: url("./img/common/ico-arrow-down.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-arrow-down.png") no-repeat center/100% auto;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
 .accordion-list .item .arrow-down.on {
-	background-image: url("./img/common/ico-close.png");
+	background-image: url("../img/common/ico-close.png");
 }
 
 .accordion-list .item .icon {
@@ -335,7 +335,7 @@
 	margin: 0 auto 30px;
 	width: 30px;
 	height: 24px;
-	background: url("./img/content/ico-quote-mark.png") no-repeat center/100% auto;
+	background: url("../img/content/ico-quote-mark.png") no-repeat center/100% auto;
 }
 
 .contact .info-wrap {
@@ -382,15 +382,15 @@
 }
 
 .contact .info-con .sns-list li.instagram a {
-	background: url("./img/common/ico-instagram.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-instagram.png") no-repeat center/100% auto;
 }
 
 .contact .info-con .sns-list li.facebook a {
-	background: url("./img/common/ico-facebook.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-facebook.png") no-repeat center/100% auto;
 }
 
 .contact .info-con .sns-list li.youtube a {
-	background: url("./img/common/ico-youtube.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-youtube.png") no-repeat center/100% auto;
 }
 
 .contact .input-con .input-list {
@@ -882,7 +882,7 @@
 	font-size: 29px;
 	font-weight: 700;
 	word-break: keep-all;
-	background: url("./img//content/img-leaven-03-bg.png") no-repeat center/100% auto;
+	background: url("../img//content/img-leaven-03-bg.png") no-repeat center/100% auto;
 }
 
 .leaven .kind {
@@ -1066,7 +1066,7 @@
 }
 
 .cafe .store .info-con .social-btn .instagram::before {
-	background: url("./img/common/icon-insta.jpg") no-repeat center/100% auto;
+	background: url("../img/common/icon-insta.jpg") no-repeat center/100% auto;
 }
 
 .cafe .store .info-con .social-btn .naver {
@@ -1074,7 +1074,7 @@
 }
 
 .cafe .store .info-con .social-btn .naver::before {
-	background: url("./img/common/icon-naver.jpg") no-repeat center/100% auto;
+	background: url("../img/common/icon-naver.jpg") no-repeat center/100% auto;
 }
 
 @media (max-width: 1700px) {

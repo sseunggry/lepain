@@ -330,7 +330,7 @@
 }
 
 .history .graph {
-	background: url("./img/content/ico-company-line-01.png") repeat-y center center;
+	background: url("../img/content/ico-company-line-01.png") repeat-y center center;
 }
 
 .history .graph .type_items h4 {
@@ -342,7 +342,7 @@
 	font-weight: 900;
 	color: #6b503c;
 	text-align: center;
-	background: url("./img/content/ico-company-bubble.png") no-repeat center center;
+	background: url("../img/content/ico-company-bubble.png") no-repeat center center;
 	background-size: 100% auto;
 	font-family: "NanumMyeongjo", sans-serif;
 }
@@ -398,7 +398,7 @@
 	margin-top: 4px;
 	width: 100%;
 	height: 8px;
-	background: url("./img/content/ico-company-line-02.png") no-repeat center center;
+	background: url("../img/content/ico-company-line-02.png") no-repeat center center;
 	background-size: 100% auto;
 }
 
@@ -438,7 +438,7 @@
 
 .vision {
 	padding: 360px 0;
-	background: url("./img/content/bg-company-01.png") no-repeat center center;
+	background: url("../img/content/bg-company-01.png") no-repeat center center;
 	background-size: cover;
 }
 
@@ -798,7 +798,7 @@
 
 	.vision {
 		padding: 18.67vw 0 120vw;
-		background-image: url("./img/content/mo-bg-company-01.png");
+		background-image: url("../img/content/mo-bg-company-01.png");
 	}
 
 	.vision .inner {
@@ -991,7 +991,7 @@
 .ethical .safety {
 	position: relative;
 	padding: 180px 0 450px;
-	background: url("./img/content/bg-ethical-02.png") no-repeat center center;
+	background: url("../img/content/bg-ethical-02.png") no-repeat center center;
 	background-size: cover;
 }
 
@@ -1445,7 +1445,7 @@
 	display: block;
 	width: 395px;
 	height: 321px;
-	background: url("./img//content/img-center-02-02.png") no-repeat center/100% auto;
+	background: url("../img//content/img-center-02-02.png") no-repeat center/100% auto;
 }
 
 .center .patent .txt-con {

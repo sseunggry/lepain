@@ -3,85 +3,85 @@
 /* ====================================================================== */
 @font-face {
 	font-family: "SUIT-Variable";
-	src: url("./fonts/SUIT-Variable.ttf") format("truetype");
+	src: url("../fonts/SUIT-Variable.ttf") format("truetype");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Thin.ttf") format("truetype");
+	src: url("../fonts/SUIT-Thin.ttf") format("truetype");
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Light.ttf") format("truetype");
+	src: url("../fonts/SUIT-Light.ttf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Regular.ttf") format("truetype");
+	src: url("../fonts/SUIT-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Medium.ttf") format("truetype");
+	src: url("../fonts/SUIT-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-SemiBold.ttf") format("truetype");
+	src: url("../fonts/SUIT-SemiBold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Bold.ttf") format("truetype");
+	src: url("../fonts/SUIT-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-ExtraBold.ttf") format("truetype");
+	src: url("../fonts/SUIT-ExtraBold.ttf") format("truetype");
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: "SUIT";
-	src: url("./fonts/SUIT-Heavy.ttf") format("truetype");
+	src: url("../fonts/SUIT-Heavy.ttf") format("truetype");
 	font-weight: 900;
 	font-style: normal;
 }
 @font-face {
 	font-family: "NanumMyeongjo";
-	src: url("./fonts/NanumMyeongjo.ttf") format("truetype");
+	src: url("../fonts/NanumMyeongjo.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "NanumMyeongjo";
-	src: url("./fonts/NanumMyeongjoBold.ttf") format("truetype");
+	src: url("../fonts/NanumMyeongjoBold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: "NanumMyeongjo";
-	src: url("./fonts/NanumMyeongjoExtraBold.ttf") format("truetype");
+	src: url("../fonts/NanumMyeongjoExtraBold.ttf") format("truetype");
 	font-weight: 900;
 	font-style: normal;
 }
 @font-face {
 	font-family: "LibreBaskerville";
-	src: url("./fonts/LibreBaskerville-Regular.ttf") format("truetype");
+	src: url("../fonts/LibreBaskerville-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "LibreBaskerville";
-	src: url("./fonts/LibreBaskerville-Bold.ttf") format("truetype");
+	src: url("../fonts/LibreBaskerville-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }

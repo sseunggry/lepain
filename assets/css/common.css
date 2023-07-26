@@ -1897,8 +1897,8 @@ input::placeholder, textarea::placeholder {
 	.header .util-btn .ico-menu a {
 		display: inline-block;
 		margin-left: 10px;
-		width: 30px;
-		height: 30px;
+		width: 44px;
+		height: 44px;
 	}
 
 	.header .nav {
@@ -2115,8 +2115,8 @@ input::placeholder, textarea::placeholder {
 
 	.header .util-btn .ico-menu a {
 		margin-left: 1.33vw;
-		width: 4.00vw;
-		height: 4.00vw;
+		width: 5.87vw;
+		height: 5.87vw;
 	}
 	
 	.header .nav {

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title>LePain</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <h1 class="logo">
+        <a href="#"><img src="../assets/img/common/logo.png" alt=""></a>
+    </h1>
+    <div class="nav">
+        <i class="ico-close mo_only"></i>
+        <ul class="menu">
+            <li>
+                <h2>About us</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../about/company.html');">COMPANY</a></li>
+                    <li><a href="javascript:pageEventFn('../about/leadership.html');">LEADERSHIP</a></li>
+                    <li><a href="javascript:pageEventFn('../about/responsibility.html');">RESPONSIBILITY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Business</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../business/bakery.html');">BAKERY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/center.html');">R&D</a></li>
+                    <li><a href="javascript:pageEventFn('../business/academy.html');">ACADEMY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/currency.html');">유통/물류/생산/설비</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Bakery/Cafe</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../cafe/index.html');">BAKERY/CAFE</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Leaven</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../leaven/index.html');">LEAVEN</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Product</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../product/index.html');">PRODUCT</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Academy</h2>
+                <ul class="sub-menu">
+                    <li><a href="#!">ACADEMY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Community</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../community/notice_list.html');">공지사항</a></li>
+                    <li><a href="javascript:pageEventFn('../community/contact.html');">CONTACT</a></li>
+                    <li><a href="javascript:pageEventFn('../community/faq.html');">QnA</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="util-btn">
+        <div class="search">
+            <label>
+                <input type="text" value="" placeholder="">
+            </label>
+            <button type="button"><span class="blind">검색</span></button>
+        </div>
+        <div class="ico-menu">
+            <a href="#!">
+                <img src="../assets/img/common/ico-menu.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+        <!-- contents -->
+        <div class="contents cafe">
+            <div class="store">
+                <div class="inner-l">
+                    <div class="txt-wrap motion">
+                        <div class="sub-tit">
+                            <h3>르빵 송파본점 <br/> Bakery Lepain-songpa</h3>
+                            <p class="desc">
+                                <strong class="bold">Since 2010</strong> <br/>
+                                “매일 아침 건강한 빵과 신선하고 달콤한 디저트를 준비하여 고객들을 맞이합니다. 르빵의 역사가 시작된 본점으로 10년이 넘게 고객들께 사랑받는 매장입니다. 아담하지만 빵의 진정성이 숨쉬는 곳. 문을 열고 들어가면 베이커와 파티쉐가 고요히 빵 반죽을 잡고 오븐에 빵을 굽는 모습이 보입니다. 빵은 시간별로 자주 나오기에 오전, 오후 그 어느때 방문 하셔도 최상의 퀄리티의 빵과 디저트를 만나실 수 있습니다.” 베이커리에 집중되어 있어 음료 메뉴나 테이블은 없으며 테이크아웃 중심 매장입니다.
+                            </p>
+                            <img src="../assets/img/content/img-cafe-01-01.png" alt="">
+                        </div>
+                        <dl class="info-con">
+                            <dt>MENU</dt>
+                            <dd>
+                                <strong>[빵류]</strong>
+                                공주밤식빵, 맘모스, 바게트, 소금빵, 월넛브레드, 베리넛, 호밀피칸베리,
+                                크루아상(라우겐, 오리지널, 아몬드) 이화주종단팥빵, 브리첼, 치아바타,
+                                페스츄리, 우유식빵 등
+                            </dd>
+                            <dd>
+                                <strong>[디저트류]</strong>
+                                통딸기케이크, 생크림케이크 (홀/조각) , 타르트, 갸또, 구움과자류 등
+                            </dd>
+                        </dl>
+                        <dl class="info-con">
+                            <dt>주소 및 연락처</dt>
+                            <dd class="contact">
+                                <ul>
+                                    <li>
+                                        <strong>연락처</strong>
+                                        02-420-7004
+                                    </li>
+                                    <li>
+                                        <strong>주소</strong>
+                                        서울 송파구 백제고분로41길 12 향나무빌딩 1층 (우번: 05621) <br/>
+                                        12, Baekjegobun-ro 41-gil, Songpa-gu, Seoul, Republic of Korea
+                                    </li>
+                                    <li>
+                                        <strong>영업시간</strong>
+                                        매일 08:30-20:50
+                                    </li>
+                                    <li class="mt-4">
+                                        <strong>찾아오는길</strong>
+                                        지하철 8/9호선 석촌역 2번 출구에서 266m
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="btn-wrap social-btn">
+                                <a href="#!" class="btn btn-s instagram">인스타그램</a>
+                                <a href="#!" class="btn btn-s naver">네이버 예약</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="img-wrap motion">
+                        <div class="img-con">
+                            <img src="../assets/img/content/img-cafe-01-02.jpg" alt="">
+                        </div>
+                        <div class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="store bg-brown">
+                <div class="inner-l">
+                    <div class="txt-wrap motion">
+                        <div class="sub-tit">
+                            <h3>르빵 명동성당점 <br/> BBakery Lepain - <br/> Myeongdong Catholic Cathedral</h3>
+                            <p class="desc">
+                                <strong class="bold">Since 2014</strong> <br/>
+                                르빵 본점의 정신을 이어 고객들과 조금 더 가깝게 다가가는 매장입니다. 역사적 가치가 깊은 명동성당 내부에 자리하여 더욱 숭고해진 빵의 가치. 매일 아침 르빵의 직원들을 신선하고 맛있는 빵과 디저트를 준비하여 고객들을 맞이합니다.
+                                베이커리에 집중되어 있어 음료메뉴나 테이블은 없으며 테이크아웃 중심 매장입니다.
+                            </p>
+                            <img src="../assets/img/content/img-cafe-02-01.png" alt="">
+                        </div>
+                        <dl class="info-con">
+                            <dt>MENU</dt>
+                            <dd>
+                                <strong>[빵류]</strong>
+                                공주밤식빵, 맘모스, 바게트, 소금빵, 월넛브레드, 베리넛, 호밀피칸베리,
+                                크루아상(라우겐, 오리지널, 아몬드) 이화주종단팥빵, 브리첼, 치아바타,
+                                페스츄리, 우유식빵 등
+                            </dd>
+                            <dd>
+                                <strong>[디저트류]</strong>
+                                통딸기케이크, 생크림케이크 (홀/조각) , 타르트, 갸또, 구움과자류 등
+                            </dd>
+                        </dl>
+                        <dl class="info-con">
+                            <dt>주소 및 연락처</dt>
+                            <dd class="contact">
+                                <ul>
+                                    <li>
+                                        <strong>연락처</strong>
+                                        02-3789-7545
+                                    </li>
+                                    <li>
+                                        <strong>주소</strong>
+                                        서울 중구 명동길 74 B103호 (우번:04537) <br/>
+                                        NO. B103, 74, Myeongdong-gil, Jung-gu, Seoul, Republic of Korea
+                                    </li>
+                                    <li>
+                                        <strong>영업시간</strong>
+                                        매일 09:00-20:50 (음력 설날 당일 휴무)
+                                    </li>
+                                    <li class="mt-4">
+                                        <strong>찾아오는길</strong>
+                                        <dl class="way">
+                                            <dt>지하철 :</dt>
+                                            <dd>
+                                                4호선 명동역 8번출구 하차. 명동길을 지나 명동성당 1898스토어 지하계단으로
+                                                2호선 을지로입구역 6번출구 유네스코길을 지나 명동성당 1898 스토어 지하계단으로
+                                            </dd>
+                                            <dt>버 &nbsp; 스 :</dt>
+                                            <dd>
+                                                롯데영플라자 정류장 하차, 명동 유네스코길을 지나 명동성당 1898 스토어 지하계단으로
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="btn-wrap social-btn">
+                                <a href="#!" class="btn btn-s instagram">인스타그램</a>
+                                <a href="#!" class="btn btn-s naver">네이버 예약</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="img-wrap motion">
+                        <div class="img-con">
+                            <img src="../assets/img/content/img-cafe-02-02.jpg" alt="">
+                        </div>
+                        <div class="map"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="store">
+                <div class="inner-l">
+                    <div class="txt-wrap motion">
+                        <div class="sub-tit">
+                            <h3>베이커리카페 몽핀 <br/> Bakery Cafe MONPIN</h3>
+                            <p class="desc">
+                                <strong class="bold">Since 2020</strong> <br/>
+                                르빵이 지난 10년간 개발한 빵과 디저트, 퀴진브레드, 커피와 음료가 총망라되어 있는 대형 베이커리 카페입니다. 서울시 미래유산으로 지정된 유서 깊은 흥선군의 별장, 석파랑 건물 지하에 자리해 있습니다. 동굴 구조의 실내가 아름다운 분위기를 연출합니다. 몽핀은 프랑스어의 합성어로 산이나 봉우리를 의미하는 "MONT"과 소나무를 의미하는 "PIN" 의 합성어 입니다. 늘 푸른 소나무산처럼 변치 않는 신념을 담았습니다. 더불어 "Mon" 은 한자로 "夢"이며 꿈(Dream) 의 의미가 함께 합니다. 아침이슬이 영롱한 소나무 숲에서 꿈처럼 달콤한 휴식 공간이 되고자 하는 정성. 사랑하는 가족, 연인, 친구들에게 최고의 빵과 디저트, 추억을 선사합니다.
+                            </p>
+                            <div class="img-con">
+                                <img src="../assets/img/content/img-cafe-03-01.png" alt="">
+                                <p class="caption">[세스코멤버스] 통합방제점검 시스템으로 쾌적하고 건강한 실내공간을 유지합니다.</p>
+                            </div>
+                        </div>
+                        <dl class="info-con">
+                            <dt>MENU</dt>
+                            <dd>
+                                <strong>[빵류]</strong>
+                                공주밤식빵, 맘모스, 바게트, 소금빵, 월넛브레드, 베리넛, 호밀피칸베리,
+                                크루아상(라우겐, 오리지널, 아몬드) 이화주종단팥빵, 브리첼, 치아바타,
+                                페스츄리, 우유식빵 등
+                            </dd>
+                            <dd>
+                                <strong>[디저트류]</strong>
+                                통딸기케이크, 생크림케이크 (홀/조각) , 타르트, 갸또, 구움과자류 등
+                            </dd>
+                        </dl>
+                        <dl class="info-con">
+                            <dt>주소 및 연락처</dt>
+                            <dd class="contact">
+                                <ul>
+                                    <li>
+                                        <strong>연락처</strong>
+                                        02-395-9615
+                                    </li>
+                                    <li>
+                                        <strong>주소</strong>
+                                        서울 종로구 자하문로 307 석파랑신관 주차장으로 진입 지하3층 <br/>
+                                        몽핀베이커리 (우번:03021) <br/>
+                                        307, Jahamun-ro, Jongno-gu, Seoul, Republic of Korea
+                                    </li>
+                                    <li>
+                                        <strong>영업시간</strong>
+                                        화-일: 10:00-20:50 (월요일 정기 휴무)
+                                    </li>
+                                    <li>
+                                        <strong>주차</strong>
+                                        발렛주차
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd class="btn-wrap social-btn">
+                                <a href="#!" class="btn btn-s instagram">인스타그램</a>
+                                <a href="#!" class="btn btn-s naver">네이버 예약</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="img-wrap motion">
+                        <div class="img-con">
+                            <img src="../assets/img/content/img-cafe-03-02.jpg" alt="">
+                        </div>
+                        <div class="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <ul class="company-info">
+            <li>상호 : 주식화사 르빵</li>
+            <li>대표 : 양태언</li>
+            <li>사업자등록번호 : 624-81-01764</li>
+            <li>통신판매업신고 : 제 2022-서울종로-1038호</li>
+            <li>주소 : 서울시 송파구 백제고분로 384 3층</li>
+            <li>이메일 : lepainscompany@gmail.com</li>
+            <li>Tel : 02-6952-6619</li>
+            <li>Fax : 070-5067-0458</li>
+        </ul>
+        <ul class="policy-link">
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+        </ul>
+        <p class="copyright">CopyRight © 2023 Le Pain. All rights reserved.</p>
+    </div>
+</div>
+<!--// footer -->
+
+    </div>
+
+</body>
+</html>

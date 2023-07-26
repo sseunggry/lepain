@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title>LePain</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <h1 class="logo">
+        <a href="#"><img src="../assets/img/common/logo.png" alt=""></a>
+    </h1>
+    <div class="nav">
+        <i class="ico-close mo_only"></i>
+        <ul class="menu">
+            <li>
+                <h2>About us</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../about/company.html');">COMPANY</a></li>
+                    <li><a href="javascript:pageEventFn('../about/leadership.html');">LEADERSHIP</a></li>
+                    <li><a href="javascript:pageEventFn('../about/responsibility.html');">RESPONSIBILITY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Business</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../business/bakery.html');">BAKERY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/center.html');">R&D</a></li>
+                    <li><a href="javascript:pageEventFn('../business/academy.html');">ACADEMY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/currency.html');">유통/물류/생산/설비</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Bakery/Cafe</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../cafe/index.html');">BAKERY/CAFE</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Leaven</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../leaven/index.html');">LEAVEN</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Product</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../product/index.html');">PRODUCT</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Academy</h2>
+                <ul class="sub-menu">
+                    <li><a href="#!">ACADEMY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Community</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../community/notice_list.html');">공지사항</a></li>
+                    <li><a href="javascript:pageEventFn('../community/contact.html');">CONTACT</a></li>
+                    <li><a href="javascript:pageEventFn('../community/faq.html');">QnA</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="util-btn">
+        <div class="search">
+            <label>
+                <input type="text" value="" placeholder="">
+            </label>
+            <button type="button"><span class="blind">검색</span></button>
+        </div>
+        <div class="ico-menu">
+            <a href="#!">
+                <img src="../assets/img/common/ico-menu.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+        <!-- contents -->
+        <div class="contents notice">
+            <div class="sec-kv">
+                <div class="img-con">
+                    <img src="../assets/img/content/bg-notice.jpg" alt="">
+                </div>
+            </div>
+            <div class="inner motion"> <!-- [07.27] : motion 클래스 추가 -->
+                <div class="page-tit ">
+                    <h2>공지사항</h2>
+                    <p class="desc">르빵 베이커리의 소식을 알려드립니다.</p>
+                </div>
+                <div class="table-wrap ">
+                    <div class="table-top">
+                        <p>Le Pain FAQ</p>
+                        <label class="search">
+                            <input type="text" placeholder="Search">
+                            <button type="button"><i class="ico-search"></i></button>
+                        </label>
+                    </div>
+                    <div class="table">
+                        <!-- 게시물 없을 시 -->
+                        <!-- <p class="no-result">등록된 게시물이 없습니다</p>-->
+                        <!-- //게시물 없을 시 -->
+                        <table>
+                            <colgroup>
+                                <col />
+                                <col />
+                                <col />
+                                <col />
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>내용</td>
+                                <td>작성자</td>
+                                <td>등록일</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>209</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>208</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>207</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>206</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>205</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>204</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>203</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>202</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>201</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            <tr>
+                                <td>200</td>
+                                <td class="al-l"><a href="#">공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.공지글 내용입니다.</a></td>
+                                <td>관리자</td>
+                                <td>2023.07.22</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="paging">
+                        <button type="button" class="prev-more"></button>
+                        <button type="button" class="prev"></button>
+                        <div class="page-list">
+                            <button type="button" class="on">1</button>
+                            <button type="button">2</button>
+                            <button type="button">3</button>
+                            <button type="button">4</button>
+                            <button type="button">5</button>
+                            <button type="button">6</button>
+                            <button type="button">7</button>
+                            <button type="button">8</button>
+                            <button type="button">9</button>
+                            <button type="button">10</button>
+                        </div>
+                        <button type="button" class="next-more"></button>
+                        <button type="button" class="next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <ul class="company-info">
+            <li>상호 : 주식화사 르빵</li>
+            <li>대표 : 양태언</li>
+            <li>사업자등록번호 : 624-81-01764</li>
+            <li>통신판매업신고 : 제 2022-서울종로-1038호</li>
+            <li>주소 : 서울시 송파구 백제고분로 384 3층</li>
+            <li>이메일 : lepainscompany@gmail.com</li>
+            <li>Tel : 02-6952-6619</li>
+            <li>Fax : 070-5067-0458</li>
+        </ul>
+        <ul class="policy-link">
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+        </ul>
+        <p class="copyright">CopyRight © 2023 Le Pain. All rights reserved.</p>
+    </div>
+</div>
+<!--// footer -->
+
+    </div>
+
+</body>
+</html>

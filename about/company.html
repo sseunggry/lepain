@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+
+<meta http-equiv="subject" content="" />
+<meta http-equiv="title" content="" />
+<meta http-equiv="author" content="" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta property="og:url" content="">
+
+<link rel="stylesheet" type="text/css" href="../assets/css/plugin/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/sub.css">
+<script type="text/javascript" src="../assets/js/plugin/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="../assets/js/plugin/swiper.min.js"></script>
+<script type="text/javascript" src="../assets/js/common.js"></script>
+<title>LePain</title>
+
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+<div class="header">
+    <h1 class="logo">
+        <a href="#"><img src="../assets/img/common/logo.png" alt=""></a>
+    </h1>
+    <div class="nav">
+        <i class="ico-close mo_only"></i>
+        <ul class="menu">
+            <li>
+                <h2>About us</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../about/company.html');">COMPANY</a></li>
+                    <li><a href="javascript:pageEventFn('../about/leadership.html');">LEADERSHIP</a></li>
+                    <li><a href="javascript:pageEventFn('../about/responsibility.html');">RESPONSIBILITY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Business</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../business/bakery.html');">BAKERY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/center.html');">R&D</a></li>
+                    <li><a href="javascript:pageEventFn('../business/academy.html');">ACADEMY</a></li>
+                    <li><a href="javascript:pageEventFn('../business/currency.html');">유통/물류/생산/설비</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Bakery/Cafe</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../cafe/index.html');">BAKERY/CAFE</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Leaven</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../leaven/index.html');">LEAVEN</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Product</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../product/index.html');">PRODUCT</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Academy</h2>
+                <ul class="sub-menu">
+                    <li><a href="#!">ACADEMY</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Community</h2>
+                <ul class="sub-menu">
+                    <li><a href="javascript:pageEventFn('../community/notice_list.html');">공지사항</a></li>
+                    <li><a href="javascript:pageEventFn('../community/contact.html');">CONTACT</a></li>
+                    <li><a href="javascript:pageEventFn('../community/faq.html');">QnA</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="util-btn">
+        <div class="search">
+            <label>
+                <input type="text" value="" placeholder="">
+            </label>
+            <button type="button"><span class="blind">검색</span></button>
+        </div>
+        <div class="ico-menu">
+            <a href="#!">
+                <img src="../assets/img/common/ico-menu.png" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<!--// header -->
+
+        <!-- contents -->
+        <div class="contents company">
+
+            <div class="title motion">
+                <h2>If not now, then when?</h2>
+            </div>
+
+            <!-- 기업개요 -->
+            <div class="outline">
+                <div class="inner">
+                    <div class="outline_con">                        
+                        <div class="detail motion ">
+                            <h3>기업개요</h3>
+                            <dl>
+                                <dt>
+                                    <strong>Le Pain</strong>
+                                    <span>Bake Happy Life</span>
+                                </dt>
+                                <dd>
+                                    르빵은 작은 동네 빵집으로 시작하여 대한민국 베이커리 트렌드를 선도하는 브랜드로 
+                                    자리매김하고 있습니다. <br/>
+                                    르빵의 가치는 좋은 빵에 대한 신념, 고객의 건강과 행복을 소중히 하는 철학이 
+                                    핵심을 이룹니다.<br/>
+                                    과한 단맛과 첨가제로 인해 빵은 건강한 음식이 아니라는 선입견이 팽배했을 때, 르빵은 
+                                    자가 효모를 배양하여 건강한 발효를 지향하고 사워도우, 유럽 정통 식사빵의 시장을 
+                                    용기 있게 개척해 나갔습니다.<br/><br/>
+                                    
+                                    10여 년 지속적으로 성장해 온 과정에서 현재는 베이커리, 카페, 물류와 유통의 시스템을 
+                                    준비하고 더 나아가 R&D센터, 컬리너리 아카데미 등을 갖추어 가면서 바이오 식품 
+                                    기업으로서의 도약을 추진하고 있습니다.<br/><br/>
+                                    
+                                    밤식빵, 맘모스빵, 바게트, 통딸기케이크는 남녀노소 사랑해 마지 않는 히트상품이 되었으며 
+                                    이에 안주하지 않고 빵과 요리를 결합한 퀴진브레드라는 새로운 시장을 개척하고 있습니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="img_con motion ">
+                            <img src="../assets/img/content/img-company-01.png" alt="">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- // 기업개요 -->
+
+            <!-- 연혁 -->
+            <div class="history">
+                <div class="inner">
+                    <h3 class="motion">“작은 동네빵집으로 시작하여 <br/>바이오푸드 시대를 열다”</h3>
+                    <dl class="motion">
+                        <dt>
+                            <strong>기업연혁</strong>
+                            <span>History</span>
+                        </dt>
+                        <dd>
+                            2009년 서울의 잠실 석촌호수에서 시작한 작은 동네 빵집은 빵에 대한 철학과 고객에 대한 진정성, 꾸준한 <br/> 연구개발로 대한민국의 대표 브랜드로 성장하며 미래의 빵과 바이오푸드 분야의 종합 기업으로 성장하고 있습니다. 
+                        </dd>
+                    </dl>
+
+                    <div class="graph">
+                        <div class="type_items motion ">
+                            <h4>성장기</h4>
+                            <div class="flex_box">
+                                <div class="detail">
+                                    <p>
+                                        지속적인 연구와 빵, 요리에 대한 열정으로 르빵의 핵심 경쟁력을 갖추었고
+                                        서울시 지정 유형문화재, 대원군의 별장인 문화적인 가치로 빛나는 석파랑 건물에
+                                        대규모 베이커리카페 몽핀을 런칭합니다.<br/>
+                                        성과에 취하지 않고 R&D와 물류센터에 꾸준히 투자, 사업을 진행하면서
+                                        미래의 성장에 대한 원동력을 갖추어 나가고 있습니다. 
+                                    </p>
+                                    <div class="lists">
+                                        <dl>
+                                            <dt>2022년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>ISO 9001,14001 인증</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>2021년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>르빵 물류센터 신설</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>2020년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>르빵 기업부설 연구소 설립</li>
+                                                    <li>베이커리카페 몽핀 OPEN (120평 규모)</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type_items motion ">
+                            <h4>도약기</h4>
+                            <div class="flex_box">
+                                <div class="detail">
+                                    <p>
+                                        간식으로 먹는 빵의 성격을 요리와 접목하여 대한민국 최초로<br/>
+                                        퀴진브레드 라는 새로운 영역을 개척해 나갔습니다.<br/>
+                                        그 무대로서 "르빵더테이블" 이라는 브랜드의 매장을 론칭,<br/>
+                                        갓 구운 빵과 유러피안 퀴진을 선사하며<br/>
+                                        미식가들에게 사랑받는 시기입니다. 
+                                    </p>
+                                    <div class="lists">
+                                        <dl>
+                                            <dt>2016년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>레스토랑 르빵 더 테이블 OPEN</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type_items motion ">
+                            <h4>개척기</h4>
+                            <div class="flex_box">
+                                <div class="detail">
+                                    <p>
+                                        건강하고 맛있는 빵으로 입소문이 나면서 르빵의 인지도가 급격히 상승했고
+                                        서울 전역을 넘어 전국에서 찾아오는 베이커리로 성장합니다. 
+                                    </p>
+                                    <div class="lists">
+                                        <dl>
+                                            <dt>2014년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>롯데월드몰점 OPEN</li>
+                                                    <li>명동성당점 OPEN</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type_items motion ">
+                            <h4>창업기</h4>
+                            <div class="flex_box">
+                                <div class="detail">
+                                    <p>
+                                        잠실에서 작은 빵집으로 시작하여 진심어린 빵으로<br/>
+                                        고객을 만나는 시절이 있었기에 한사람 한사람을<br/>
+                                        아끼는 르빵의 초심은 변치 않습니다.
+                                    </p>
+                                    <div class="lists">
+                                        <dl>
+                                            <dt>2010년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>2010년 르빵 송파 본점 OPEN(8평 규모)</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>2009년</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>석촌호수 베이커리 시작</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+            <!-- // 연혁 -->
+
+            <!-- 비전 -->
+            <div class="vision ">
+                <div class="inner motion">
+                    <h3>
+                        <strong>비전</strong>
+                        <span>Vision</span>
+                    </h3>
+                    <p>
+                        효모 연구에 대한 특허,<br/>
+                        지구의 저탄소 운동에 이바지하는 효모 포집 기술,<br/>
+                        미래 식량개발 등 눈부신 성과를 이룬<br/>
+                        르빵은 바이오식품 기술 개발,<br/>
+                        베이커리 플랫폼 사업,<br/>
+                        구독경제 사업 등 차별화된 사업 전략을<br/>
+                        기반으로 대한민국을 넘어 글로벌 식품기업으로<br/>
+                        지속 성장해 나갈 것입니다. 
+                    </p>
+                </div>
+            </div>
+            <!-- // 비전 -->
+
+            <!-- 핵심가치 -->
+            <div class="value">
+                <div class="inner">
+                    <h3 class="motion">
+                        <strong>핵심가치</strong>
+                        <span>Core value</span>
+                    </h3>
+                    <div class="lists motion">
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-01.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>건강한 빵</dt>
+                                <dd>
+                                    화학첨가제 없이 최고의 재료와 과정을 중시하는
+                                    베이킹으로 건강하고 풍미 넘치는 빵을 만듭니다.
+                                    르빵의 존재가치는 고객의 건강하고 행복한 삶입니다. 
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-02.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>퀴진브레드</dt>
+                                <dd>
+                                    빵의 지혜와 풍미가 갖는 확장성을 요리와 접목합니다. 
+                                    단순한 빵 자체가 아니라 즐거운 한끼의 식사가 될 수 
+                                    있는 퀴진브레드 (Cuisine Bread), 바쁜 현대인의 
+                                    삶 속에서 한조각의 빵으로도 행복감과 충분한 
+                                    영양을 제공할 수 있는 열린 빵의 세상을 르빵이 
+                                    창조해 나갑니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-03.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>지속가능한 발전</dt>
+                                <dd>
+                                    에너지 효율, 저탄소 기술, 기아와 빈곤 퇴치, 
+                                    어려운 이웃에 대한 사랑 등은 르빵이 추구하는 
+                                    핵심 가치입니다. 
+                                    환경보호를 실천하며 인류의 삶에 이바지할 
+                                    수 있는 길을 끊임없이 모색하고 모범적으로 
+                                    실천해 나갑니다.
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-04.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>도전정신</dt>
+                                <dd>
+                                    미래의 라이프스타일이 변화함에 따라 
+                                    빵의 구독 경제가 시작될 것입니다. 
+                                    고객의 연령별, 직업별 취향에 맞는 빵을 
+                                    정성껏 굽고 가장 맛있는 시점에 집 앞에 도착해 
+                                    있는 새로운 커뮤니케이션 방식을 모색합니다. 
+                                    어떠한 난관이나 장애에도 굴하지 않고 
+                                    새로운 돌파구를 찾아내는 도전정신은 
+                                    르빵의 생명력입니다. 
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-05.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>바이오테크</dt>
+                                <dd>
+                                    세계 석학과 세계적인 셰프들의 협업으로 
+                                    제과 제빵은 물론 식품계에 전반적으로 
+                                    적용가능한 마이크로바이옴 기술을 
+                                    개발해 내었습니다. 
+                                    LEPAIN R&D CENTER는 정부가 인정하고 
+                                    지원하는 핵심 기술개발연구소로서 인류의 삶에 
+                                    이바지하는 바이오기술을 연구하고 그 성과를 
+                                    지속적으로 공유해 나갈 것입니다. 
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="item">
+                            <div class="img_con">
+                                <img src="../assets/img/content/ico-company-06.png" alt="">
+                            </div>
+                            <dl>
+                                <dt>글로벌 TOP</dt>
+                                <dd>
+                                    월드클래스의 베이커, 파티쉐, 셰프, 연구자가 
+                                    모여 르빵을 움직입니다. 세계적 브랜드의 
+                                    식품회사 및 설비회사와의 장기적 파트너쉽을 
+                                    기반으로 르빵은 GLOBAL TOP BRAND 로서의 
+                                    경쟁력을 추구합니다.
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 핵심가치 -->
+
+        </div>
+        <!-- // contents -->
+
+        <!-- footer -->
+<div class="footer">
+    <div class="inner">
+        <ul class="company-info">
+            <li>상호 : 주식화사 르빵</li>
+            <li>대표 : 양태언</li>
+            <li>사업자등록번호 : 624-81-01764</li>
+            <li>통신판매업신고 : 제 2022-서울종로-1038호</li>
+            <li>주소 : 서울시 송파구 백제고분로 384 3층</li>
+            <li>이메일 : lepainscompany@gmail.com</li>
+            <li>Tel : 02-6952-6619</li>
+            <li>Fax : 070-5067-0458</li>
+        </ul>
+        <ul class="policy-link">
+            <li><a href="#!">이용약관</a></li>
+            <li><a href="#!">개인정보처리방침</a></li>
+        </ul>
+        <p class="copyright">CopyRight © 2023 Le Pain. All rights reserved.</p>
+    </div>
+</div>
+<!--// footer -->
+
+    </div>
+
+</body>
+</html>

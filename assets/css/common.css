@@ -1460,7 +1460,7 @@ input::placeholder, textarea::placeholder {
 	    flex-shrink: 0;
 	width: 20px;
 	height: 20px;
-	background: url("./img//common/ico-search-w.png") no-repeat center/100% auto;
+	background: url("../img/common/ico-search-w.png") no-repeat center/100% auto;
 }
 
 .header .nav {
@@ -1949,7 +1949,7 @@ input::placeholder, textarea::placeholder {
 		display: inline-block;
 		width: 32px;
 		height: 32px;
-		background: url("./img//common/ico-arrow-down2.png") no-repeat center/100% auto;
+		background: url("../img/common/ico-arrow-down2.png") no-repeat center/100% auto;
 	}
 
 	.header .nav .sub {
@@ -1983,7 +1983,7 @@ input::placeholder, textarea::placeholder {
 		display: block;
 		width: 65px;
 		height: 65px;
-		background: url("./img/common/ico-close2.png") no-repeat center/100% auto;
+		background: url("../img/common/ico-close2.png") no-repeat center/100% auto;
 		cursor: pointer;
 	}
 
@@ -2013,7 +2013,7 @@ input::placeholder, textarea::placeholder {
 	}
 
 	.header .nav .menu > li.on h2::after {
-		background-image: url("./img/common/ico-arrow-up2.png");
+		background-image: url("../img/common/ico-arrow-up2.png");
 	}
 
 	.inner {

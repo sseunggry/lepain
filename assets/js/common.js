@@ -124,7 +124,7 @@ function roadMotionFn(){
 function scrollMotion(){
 	scrollTop = $(window).scrollTop();
 	// windowH = window.innerHeight;
-	windowH = window.innerHeight * 2/3;
+	windowH = window.innerHeight * 3/4;
 	let objY, objH = 0;
 
 	$(".motion").each(function(){

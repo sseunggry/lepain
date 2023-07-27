@@ -76,7 +76,7 @@ function headerFn(windowW){
 					$("body").css({"overflow": "hidden"});
 				} else{
 					$header.removeClass("on");
-					$("body").css({"overflow": "auto"});
+					$('body').css({'overflow': ''});
 				}
 				
 			});
@@ -100,6 +100,7 @@ function headerFn(windowW){
 				$header.removeClass("on");
 				$(".menu .sub-menu").stop().slideUp();
 				$(".menu li").removeClass("on");
+				$('body').css({'overflow': ''});
 			});
 		}
 	}

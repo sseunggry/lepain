@@ -703,7 +703,7 @@
 	}
 
 	.company .outline_con .detail dl dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.history {
@@ -737,7 +737,7 @@
 	}
 
 	.history dl dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.history .graph {
@@ -753,7 +753,7 @@
 
 	.history .graph .type_items .detail p {
 		margin-bottom: 4vw;
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.history .graph .type_items .detail .lists {
@@ -767,7 +767,7 @@
 
 	.history .graph .type_items .detail .lists dl dt {
 		width: 13.87vw;
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.history .graph .type_items .detail .lists dl dt::after {
@@ -777,7 +777,7 @@
 
 	.history .graph .type_items .detail .lists dl dd {
 		padding-top: 2.93vw;
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.history .graph .type_items:nth-of-type(2n) .detail p {
@@ -864,7 +864,7 @@
 	}
 
 	.value .lists .item dl dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 }
 /* 
@@ -1165,7 +1165,7 @@
 	}
 
 	.ethical .policy .title dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.ethical .policy .lists {
@@ -1192,7 +1192,7 @@
 
 	.ethical .policy .lists .item .guide p {
 		padding: 0 2.67vw;
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.ethical .safety {
@@ -1213,7 +1213,7 @@
 	}
 
 	.ethical .safety .title dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.ethical .safety .img_con {
@@ -1247,7 +1247,7 @@
 	}
 
 	.ethical .social .title dd {
-		font-size: 2.67vw;
+		font-size: 3.73vw;
 	}
 
 	.ethical .social .flex-box {

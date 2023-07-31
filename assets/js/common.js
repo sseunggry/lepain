@@ -31,7 +31,7 @@ $(function(){
 
 	headerFn(windowW);
 	pageLoadFn();
-	roadMotionFn();
+	scrollMotion();
 });
 
 function headerFn(windowW){
@@ -76,7 +76,7 @@ function headerFn(windowW){
 					$("body").css({"overflow": "hidden"});
 				} else{
 					$header.removeClass("on");
-					$('body').css({'overflow': ''});
+					$("body").css({"overflow": ""});
 				}
 				
 			});
@@ -100,7 +100,7 @@ function headerFn(windowW){
 				$header.removeClass("on");
 				$(".menu .sub-menu").stop().slideUp();
 				$(".menu li").removeClass("on");
-				$('body').css({'overflow': ''});
+				$("body").css({"overflow": ""});
 			});
 		}
 	}
@@ -113,12 +113,6 @@ function pageLoadFn(){
 function pageEventFn(url){
 	$(".wrap").stop().fadeOut(300, function(){
 		location.href = url;
-	});
-}
-
-function roadMotionFn(){
-	$(".motion").each(function(){
-		$(this).addClass("onTrans");
 	});
 }
 
@@ -135,13 +129,13 @@ function scrollMotion(){
 		if(scrollTop > objY - windowH) {
 			$(this).addClass("onTrans");
 
-			if(scrollTop > objY + objH) {
-				$(this).removeClass("onTrans");
-			}
+			// if(scrollTop > objY + objH) {
+			// 	$(this).removeClass('onTrans');
+			// }
 		}
 
 		else {
-			$(this).removeClass("onTrans");
+			// $(this).removeClass('onTrans');
 		}
 	});
 }

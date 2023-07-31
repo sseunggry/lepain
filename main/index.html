@@ -36,8 +36,97 @@
         <div class="main-header">
             <h1 class="logo">
                 <a href="#!"><img src="../assets/img/main/main-logo-1.png" alt=""></a>
-                <a href="#!"><img src="../assets/img/main/main-logo-2.png" alt=""></a>
+                <a href="#!" class="menu"><img src="../assets/img/main/main-logo-2.png" alt=""></a>
             </h1>
+            <div class="nav">
+                <i class="ico-close"></i>
+                <ul class="menu-img">
+                    <li class="on"><img src="../assets/img/main/menu-about.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-business.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-bakery.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-leaven.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-product.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-academy.jpg" alt=""></li>
+                    <li><img src="../assets/img/main/menu-community.jpg" alt=""></li>
+                </ul>
+                <ul class="menu">
+                    <li>
+                        <a href="javascript:pageEventFn('../about/company.html');">About us</a>
+                    </li>
+                    <li>
+                        <a href="javascript:pageEventFn('../business/bakery.html');">Business</a>
+                    </li>
+                    <li>
+                        <a href="javascript:pageEventFn('../cafe/index.html');">Bakery/Cafe</a>
+                    </li>
+                    <li>
+                        <a href="javascript:pageEventFn('../leaven/index.html');">Leaven</a>
+                    </li>
+                    <li>
+                        <a href="javascript:pageEventFn('../product/index.html');">Product</a>
+                    </li>
+                    <li>
+                        <a href="#!">Academy</a>
+                    </li>
+                    <li>
+                        <a href="javascript:pageEventFn('../community/notice_list.html');">Community</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mo-nav">
+                <i class="ico-close"></i>
+                <ul class="menu">
+                    <li>
+                        <h2>About us</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../about/company.html');">COMPANY</a></li>
+                            <li><a href="javascript:pageEventFn('../about/leadership.html');">LEADERSHIP</a></li>
+                            <li><a href="javascript:pageEventFn('../about/responsibility.html');">RESPONSIBILITY</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Business</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../business/bakery.html');">BAKERY</a></li>
+                            <li><a href="javascript:pageEventFn('../business/center.html');">R&D</a></li>
+                            <li><a href="javascript:pageEventFn('../business/academy.html');">ACADEMY</a></li>
+                            <li><a href="javascript:pageEventFn('../business/currency.html');">유통/물류/생산/설비</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Bakery/Cafe</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../cafe/index.html');">BAKERY/CAFE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Leaven</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../leaven/index.html');">LEAVEN</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Product</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../product/index.html');">PRODUCT</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Academy</h2>
+                        <ul class="sub-menu">
+                            <li><a href="#!">ACADEMY</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Community</h2>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:pageEventFn('../community/notice_list.html');">공지사항</a></li>
+                            <li><a href="javascript:pageEventFn('../community/contact.html');">CONTACT</a></li>
+                            <li><a href="javascript:pageEventFn('../community/faq.html');">QnA</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
 
         <!-- contents -->
@@ -62,17 +151,20 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="img-con">
-                                    <img src="../assets/img/main/img-02-01.jpg" alt="">
+                                    <img src="../assets/img/main/img-02-01.jpg" alt="" class="pc_only">
+                                    <img src="../assets/img/main/mo-img-02-01.jpg" alt="" class="mo_only">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="img-con">
-                                    <img src="../assets/img/main/img-02-02.jpg" alt="">
+                                    <img src="../assets/img/main/img-02-02.jpg" alt="" class="pc_only">
+                                    <img src="../assets/img/main/mo-img-02-02.jpg" alt="" class="mo_only">
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="img-con">
-                                    <img src="../assets/img/main/img-02-03.jpg" alt="">
+                                    <img src="../assets/img/main/img-02-03.jpg" alt="" class="pc_only">
+                                    <img src="../assets/img/main/mo-img-02-03.jpg" alt="" class="mo_only">
                                 </div>
                             </div>
                         </div>
@@ -277,9 +369,11 @@
             translateY      = 0,
             pcSwiperTrigger = true,
         	moSwiperTrigger = true,
-            wheeltrigger    = true;
+            wheelTrigger    = true;
 
         $(function(){
+            mainHeaderFn();
+            productFontSizeFn();
             var imgSwiper = new Swiper(".imgSwiper", {
                 effect: 'fade',
                 fadeEffect: {
@@ -301,15 +395,16 @@
                 horizonScroll();
             });
 
-            mainSwiper.on('touchMove', function(){
-                wheeltrigger = false;
-            });
-
-            mainSwiper.on('touchEnd', function(){
-                setTimeout(function(){
-                    wheeltrigger = true;
-                }, 200);
-            });
+            if(mainSwiper !== undefined) {
+                mainSwiper.on('touchMove', function(){
+                    wheelTrigger = false;
+                });
+                mainSwiper.on('touchEnd', function(){
+                    setTimeout(function(){
+                        wheelTrigger = true;
+                    }, 200);
+                });
+            }
         });
 
         function horizonScroll(){
@@ -322,7 +417,11 @@
                         slidesPerView: "auto",
                         freeMode: true,
                         allowTouchMove: false,
-                        touchRatio: 0
+                        touchRatio: 0,
+                        // pagination: {
+                        //     el: ".swiper-pagination",
+                        //     clickable: true,
+                        // },
                     });
 
                     $(window).bind('wheel', wheelEventFn);
@@ -331,23 +430,85 @@
                 if(pcSwiperTrigger) {
         			moSwiperTrigger = false;
                     moSwiperTrigger = true;
-                    
-                    mainSwiper.destroy();
+
+                    if(mainSwiper !== undefined) mainSwiper.destroy();
                     $(window).unbind('wheel', wheelEventFn);
                 }
             }
         }
-
         function wheelEventFn(event){
             translateY = mainSwiper.translate;
-            if(wheeltrigger){
+            if(wheelTrigger){
                 if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-                    mainSwiper.translateTo(translateY+50, 250);
+                    mainSwiper.translateTo(translateY+70, 250);
                 }
                 else {
-                    mainSwiper.translateTo(translateY-50, 250);
+                    mainSwiper.translateTo(translateY-70, 250);
                 }
             }
+        }
+        function mainHeaderFn(){
+            $('.main-header .logo .menu').on('click', function(){
+                $(this).parents('.main-header').addClass('on');
+
+                if(windowW > 1080) {
+                    $(window).unbind('wheel', wheelEventFn);
+                } else{
+                    $('body').css({'overflow': 'hidden'});
+                }
+            });
+
+            $('.main-header .ico-close').on('click', function(){
+                $(this).parents('.main-header').removeClass('on');
+
+                if(windowW > 1080) {
+                    $(window).bind('wheel', wheelEventFn);
+                } else{
+                    $('body').css({'overflow': ''});
+                }
+            });
+
+            $('.main-header .nav .menu li').on('mouseover click', function(e){
+                let idx = $(this).index();
+                let menuImg = $('.main-header .nav .menu-img li');
+
+                $(this).addClass('on').siblings().removeClass('on');
+                menuImg.eq(idx).addClass('on').siblings().removeClass('on');
+            });
+
+            $('.main-header .mo-nav .menu h2').on('click', function(){
+                let $li = $(this).parent('li');
+                let $subMenu = $(this).siblings('.sub-menu');
+
+                if(!$li.hasClass('on')){
+                    $li.addClass('on').siblings().removeClass('on');
+                    $('.menu .sub-menu').stop().slideUp();
+                    $subMenu.stop().slideDown();
+                } else{
+                    $li.removeClass('on');
+                    $subMenu.stop().slideUp();
+                }
+            });
+
+            $('.main-header .mo-nav .ico-close').on('click', function(){
+                let $header = $(this).parents('.header');
+                $header.removeClass('on');
+                $('.menu .sub-menu').stop().slideUp();
+                $('.menu li').removeClass("on");
+                $('body').css({'overflow': ''});
+            });
+        }
+        function productFontSizeFn(){
+            let prductName = $('.main .sec-05 .product-list li span');
+
+            prductName.each(function(idx, el){
+                let $el = $(el);
+                let textLength = $el.text().length;
+
+                if(textLength < 7){
+                    $el.addClass('txt-l');
+                }
+            });
         }
       </script>
 </body>

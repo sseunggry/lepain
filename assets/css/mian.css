@@ -7,7 +7,17 @@
 .main-header .logo {
 	position: fixed;
 	top: 40px;
-	right: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 0 40px;
+	width: 100%;
 	z-index: 10;
 }
 
@@ -17,13 +27,168 @@
 
 .main-header .logo a:nth-child(1) {
 	margin-right: 20px;
-	width: 67px;
-	vertical-align: middle;
+	width: 57px;
 }
 
 .main-header .logo a:nth-child(2) {
 	width: 104px;
 	vertical-align: middle;
+}
+
+.main-header.on .nav {
+	visibility: visible;
+	opacity: 1;
+}
+
+.main-header.on .nav .ico-close {
+	opacity: 1;
+}
+
+.main-header.on .nav .menu-img {
+	left: 0;
+}
+
+.main-header.on .nav .menu {
+	right: 0;
+}
+
+.main-header .nav {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.main-header .nav .ico-close {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	width: 65px;
+	height: 65px;
+	background: url("../img/common/ico-close2.png") no-repeat center/100% auto;
+	cursor: pointer;
+	z-index: 5;
+	opacity: 0;
+	-webkit-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.main-header .nav .menu-img {
+	position: relative;
+	left: -100%;
+	overflow: hidden;
+	width: 60%;
+	height: 100%;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	background: #fff;
+}
+
+.main-header .nav .menu-img li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(1.2);
+	    -ms-transform: scale(1.2);
+	        transform: scale(1.2);
+	z-index: 0;
+	-webkit-transition: opacity 1s, -webkit-transform 0.8s;
+	transition: opacity 1s, -webkit-transform 0.8s;
+	transition: opacity 1s, transform 0.8s;
+	transition: opacity 1s, transform 0.8s, -webkit-transform 0.8s;
+}
+
+.main-header .nav .menu-img li.on {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	z-index: 1;
+}
+
+.main-header .nav .menu-img li img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	width: auto;
+	height: 100%;
+	min-width: 1280px;
+	min-height: 1080px;
+}
+
+.main-header .nav .menu {
+	overflow: hidden scroll;
+	position: relative;
+	right: -100%;
+	padding: 250px 30px 50px 0;
+	width: 40%;
+	height: 100vh;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	background: #fff;
+}
+
+.main-header .nav .menu li + li {
+	margin-top: 20px;
+}
+
+.main-header .nav .menu li a {
+	position: relative;
+	padding-left: 12%;
+	font-family: "LibreBaskerville", Arial, sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.main-header .nav .menu li a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+	width: 0;
+	height: 1px;
+	background: #212121;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.main-header .nav .menu li.on a {
+	font-weight: 700;
+}
+
+.main-header .nav .menu li.on a::after {
+	width: 100%;
+}
+
+.main-header .nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.main-header .mo-nav {
+	display: none;
 }
 
 .main .mainSwiper > .swiper-wrapper {
@@ -263,12 +428,16 @@
 	    -ms-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	font-family: "LibreBaskerville", Arial, sans-serif;
-	font-size: 46px;
+	font-size: 40px;
 	color: #6b503c;
 	text-align: center;
 	opacity: 0;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+}
+
+.main .sec-05 .product-list li span.txt-l {
+	font-size: 60px;
 }
 
 .main .sec-05 .product-list li.large a {
@@ -417,7 +586,7 @@
 }
 
 .main .sec-07 .deco-bar {
-	background: #d2b198;
+	background-color: #d2b198;
 }
 
 .main .sec-07 .info-con {
@@ -475,9 +644,22 @@
 	background: url("../img/main/ico-sns-pen.png") no-repeat center/100% auto;
 }
 
+@media (max-width: 1280px) {
+	.main-header .nav .menu-img {
+		width: 50%;
+	}
+
+	.main-header .nav .menu {
+		width: 50%;
+	}
+}
 @media (max-width: 1080px) {
 	.contents.main {
 		overflow: hidden auto;
+	}
+
+	.main-header .nav .menu li a {
+		font-size: 45px;
 	}
 
 	.main .mainSwiper > .swiper-wrapper {
@@ -486,8 +668,7 @@
 		    flex-wrap: wrap;
 	}
 
-	.main .mainSwiper > .swiper-wrapper .sec-01,
-.main .mainSwiper > .swiper-wrapper .sec-07 {
+	.main .mainSwiper > .swiper-wrapper .sec-01 {
 		height: 100vh;
 	}
 
@@ -516,7 +697,7 @@
 	.main .sec-03 {
 		width: 100%;
 		min-height: 880px;
-		background-image: url(../img/main/mo-bg-03.jpg);
+		background-image: url(../img/main/bg-06.jpg);
 	}
 
 	.main .sec-03 .txt-con {
@@ -625,7 +806,9 @@
 	}
 
 	.main .sec-06 .txt-con {
+		padding-top: 30%;
 		height: 100%;
+		min-height: 800px;
 	}
 
 	.main .sec-07 {
@@ -637,46 +820,244 @@
 	.main .sec-07 .info-con {
 		padding: 80px;
 		height: 100%;
+		min-height: 800px;
+	}
+}
+@media (max-width: 980px) {
+	.main-header .nav {
+		display: none;
+	}
+
+	.main-header .mo-nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 0 0 60px 60px;
+	}
+
+	.main-header .mo-nav {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		overflow: hidden auto;
+		padding: 0 0 60px 60px;
+		width: 71%;
+		height: 100%;
+		background: #fff;
+		z-index: 10;
+		-webkit-transition: left 0.5s;
+		transition: left 0.5s;
+	}
+
+	.main-header .mo-nav .menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin-top: 150px;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		font-family: "LibreBaskerville", Arial, sans-serif;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+	}
+
+	.main-header .mo-nav .menu > li {
+		display: block;
+		margin-bottom: 0;
+		padding: 20px 0;
+		width: 100%;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		color: #212121;
+	}
+
+	.main-header .mo-nav .menu h2 {
+		position: relative;
+		text-transform: uppercase;
+		font-size: 40px;
+		opacity: 1;
+		cursor: pointer;
+	}
+
+	.main-header .mo-nav .menu h2::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 50px;
+		-webkit-transform: translateY(-50%);
+		    -ms-transform: translateY(-50%);
+		        transform: translateY(-50%);
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		background: url("../img//common/ico-arrow-down2.png") no-repeat center/100% auto;
+	}
+
+	.main-header .mo-nav .sub {
+		position: absolute;
+		left: 0;
+		top: 70px;
+		width: 100%;
+		background-color: #fff;
+	}
+
+	.main-header .mo-nav .sub-menu {
+		display: none;
+		position: static;
+		margin: 60px 0 40px;
+		height: auto;
+		padding-top: 0;
+		text-align: left;
+		-webkit-transform: translateX(0);
+		    -ms-transform: translateX(0);
+		        transform: translateX(0);
+		font-size: 32px;
+		color: #979797;
+	}
+
+	.main-header .mo-nav .sub-menu > li + li {
+		margin-top: 20px;
+	}
+
+	.main-header .mo-nav .ico-close {
+		position: absolute;
+		top: 35px;
+		right: 30px;
+		display: block;
+		width: 65px;
+		height: 65px;
+		background: url("../img/common/ico-close2.png") no-repeat center/100% auto;
+		cursor: pointer;
+	}
+
+	.main-header.on::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 5;
+	}
+
+	.main-header.on .mo-nav {
+		left: 0;
+	}
+
+	.main-header .mo-nav .menu > li.on h2 {
+		border-bottom: 1px solid #212121;
+	}
+
+	.main-header .mo-nav .menu > li.on h2::after {
+		background-image: url("../img/common/ico-arrow-up2.png");
 	}
 }
 @media (max-width: 750px) {
 	.main-header .logo {
 		top: 5.33vw;
-		right: 5.33vw;
+		right: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		padding: 0 5.33vw;
+		width: 100%;
 	}
 
 	.main-header .logo a:nth-child(1) {
 		margin-right: 2.67vw;
-		width: 8.93vw;
+		width: 7.6vw;
 	}
 
 	.main-header .logo a:nth-child(2) {
 		width: 13.87vw;
 	}
 
+	.main-header .mo-nav {
+		padding: 0 0 8vw 8vw;
+	}
+
+	.main-header .mo-nav .menu {
+		margin-top: 20vw;
+	}
+
+	.main-header .mo-nav .menu > li {
+		margin-bottom: 0;
+		padding: 3.67vw 0;
+	}
+
+	.main-header .mo-nav .menu h2 {
+		font-size: 5.33vw;
+	}
+
+	.main-header .mo-nav .menu h2::after {
+		right: 6.67vw;
+		width: 4.27vw;
+		height: 4.27vw;
+	}
+
+	.main-header .mo-nav .sub {
+		top: 9.33vw;
+	}
+
+	.main-header .mo-nav .sub-menu {
+		margin: 8vw 0 5.33vw;
+		font-size: 4.27vw;
+	}
+
+	.main-header .mo-nav .sub-menu > li + li {
+		margin-top: 2.67vw;
+	}
+
+	.main-header .mo-nav .ico-close {
+		top: 4.67vw;
+		right: 4vw;
+		width: 8.67vw;
+		height: 8.67vw;
+	}
+
+	.main-header .mo-nav .menu > li.on h2 {
+		border-bottom-width: 2px;
+	}
+
 	.main .deco-bar {
-		padding: 2.67vw 5.33vw;
-		height: auto;
+		padding: 8vw;
+		height: 100vh;
 		white-space: normal;
 		text-align: center;
+		background: url("../img/main/mo-bg-03.jpg") no-repeat center/cover;
 	}
 
 	.main .deco-bar p {
-		font-size: 4.53vw;
+		font-size: 10.67vw;
 	}
 
 	.main .sec-01 {
 		margin-bottom: 4vw;
-		padding: 13.33vw;
+		padding: 0 8vw;
 	}
 
 	.main .sec-01 .sec-inner {
-		width: 80%;
+		width: 100%;
 	}
 
 	.main .sec-01 .logo {
-		margin-bottom: 6.67vw;
-		width: 43.07vw;
+		margin-bottom: 8vw;
+		width: 51.47vw;
 	}
 
 	.main .sec-01 .txt-con h2 {
@@ -685,7 +1066,7 @@
 
 	.main .sec-01 .txt-con p {
 		margin: 4vw 0 2.67vw;
-		font-size: 4.27vw;
+		font-size: 3.47vw;
 	}
 
 	.main .sec-01 .txt-con span {
@@ -705,11 +1086,27 @@
 	}
 
 	.main .sec-03 .txt-con h2 {
+		margin-bottom: 0;
 		font-size: 8vw;
+		text-align: center;
+	}
+
+	.main .sec-03 .txt-con h2 br {
+		display: none;
+	}
+
+	.main .sec-03 .txt-con h2::after {
+		content: "";
+		display: block;
+		margin: 24.8vw auto 28.4vw;
+		width: 51.47vw;
+		height: 28.8vw;
+		background: url("../img/main/logo-w.png") no-repeat center/100% auto;
 	}
 
 	.main .sec-03 .txt-con .desc {
 		font-size: 3.2vw;
+		text-align: center;
 	}
 
 	.main .sec-04 .link-list .item {
@@ -754,6 +1151,10 @@
 		opacity: 1;
 	}
 
+	.main .sec-05 .product-list li span.txt-l {
+		font-size: 9.33vw;
+	}
+
 	.main .sec-05 .product-list li.large a {
 		width: 84vw;
 		border-radius: 22.27vw;
@@ -781,6 +1182,74 @@
 		-webkit-box-ordinal-group: 1;
 		    -ms-flex-order: 0;
 		        order: 0;
+	}
+
+	.main .sec-07 {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.main .sec-07 .info-con {
+		padding: 10.67vw;
+		height: 100%;
+	}
+
+	.main .sec-06 {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		width: 100%;
+	}
+
+	.main .sec-06 .txt-con {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		padding: 8vw 8vw 13.33vw;
+		height: 100vh;
+	}
+
+	.main .sec-06 .txt-con h2 {
+		margin-bottom: 5.33vw;
+		font-size: 8.67vw;
+	}
+
+	.main .sec-06 .txt-con p {
+		font-size: 5.07vw;
+	}
+
+	.main .sec-07 .info-con {
+		position: relative;
+		padding: 8vw;
+		height: 100vh;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+
+	.main .sec-07 .logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+		width: 51.47vw;
+	}
+
+	.main .sec-07 .sns-list {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.main .sec-07 .sns-list li + li {
+		margin-left: 3.73vw;
+	}
+
+	.main .sec-07 .sns-list li a {
+		width: 16.53vw;
+		height: 16.53vw;
 	}
 }
 /*# sourceMappingURL=maps/mian.css.map */

@@ -118,7 +118,6 @@ function pageEventFn(url){
 
 function scrollMotion(){
 	scrollTop = $(window).scrollTop();
-	// windowH = window.innerHeight;
 	windowH = window.innerHeight * 3/4;
 	let objY, objH = 0;
 
@@ -128,14 +127,6 @@ function scrollMotion(){
 
 		if(scrollTop > objY - windowH) {
 			$(this).addClass("onTrans");
-
-			// if(scrollTop > objY + objH) {
-			// 	$(this).removeClass('onTrans');
-			// }
-		}
-
-		else {
-			// $(this).removeClass('onTrans');
 		}
 	});
 }

@@ -980,11 +980,11 @@
 
 	.main-header .logo a:nth-child(1) {
 		margin-right: 2.67vw;
-		width: 7.6vw;
+		width: 11.6vw;
 	}
 
 	.main-header .logo a:nth-child(2) {
-		width: 13.87vw;
+		width: 17.87vw;
 	}
 
 	.main-header .mo-nav {
@@ -1191,7 +1191,7 @@
 	}
 
 	.main .sec-07 .info-con {
-		padding: 10.67vw;
+		padding: 8vw 8vw 14vw;
 		height: 100%;
 	}
 
@@ -1205,7 +1205,7 @@
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
-		padding: 8vw 8vw 13.33vw;
+		padding: 8vw 8vw 16.33vw;
 		height: 100vh;
 	}
 

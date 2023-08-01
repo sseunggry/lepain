@@ -110,7 +110,7 @@
                 </div>
 
                 <div class="product_wrap">
-                    <div class="product_items">
+                    <div class="product_items" data-item="1">
                         <div class="product_title motion">
                             <h3>하드빵</h3>
                             <p>Hard Bread</p>
@@ -211,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="2">
                         <div class="product_title motion">
                             <h3>단과자</h3>
                             <p>Sweets Dough Bread</p>
@@ -285,7 +285,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="3">
                         <div class="product_title motion">
                             <h3>식빵</h3>
                             <p>Loaf Bread</p>
@@ -346,7 +346,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="4">
                         <div class="product_title motion">
                             <h3>페이스트리</h3>
                             <p>Pastry</p>
@@ -407,7 +407,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="5">
                         <div class="product_title motion">
                             <h3>구움 과자</h3>
                             <p>Petit Four</p>
@@ -468,7 +468,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="6">
                         <div class="product_title motion">
                             <h3>마들렌</h3>
                             <p>Madeleine</p>
@@ -508,7 +508,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="7">
                         <div class="product_title motion">
                             <h3>파운드</h3>
                             <p>Pound</p>
@@ -530,7 +530,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="8">
                         <div class="product_title motion">
                             <h3>휘낭시에</h3>
                             <p>Financier</p>
@@ -552,7 +552,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="9">
                         <div class="product_title motion">
                             <h3>케이크</h3>
                             <p>Cake</p>
@@ -600,7 +600,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="10">
                         <div class="product_title motion">
                             <h3>마카롱</h3>
                             <p>Macaron</p>
@@ -623,7 +623,7 @@
                         </div>
                     </div>
 
-                    <div class="product_items">
+                    <div class="product_items" data-item="11">
                         <div class="product_title motion">
                             <h3>타르트</h3>
                             <p>Tart</p>
@@ -659,7 +659,7 @@
                         </div>
                     </div>
                     
-                    <div class="product_items">
+                    <div class="product_items" data-item="12">
                         <div class="product_title motion">
                             <h3>퀴진브레드</h3>
                             <p>Cuisine Bread</p>
@@ -680,7 +680,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -709,6 +708,19 @@
 <!--// footer -->
 
     </div>
+    <script>
+        let param = searchParam('product'),
+            headerH = $(".header").outerHeight();
 
+        if( param != "" && param != null ) {
+            $(".wrap").css({"display":"block", "opacity":0});
+
+            setTimeout(function (){
+                $(".wrap").css({"opacity":1});
+                let top = $(".product_items[data-item='"+param+"']").position().top;
+                window.scrollTo(0,top-headerH);
+            }, 200);
+        }
+    </script>
 </body>
 </html>

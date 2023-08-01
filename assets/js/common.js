@@ -130,3 +130,11 @@ function scrollMotion(){
 		}
 	});
 }
+
+function productLinkFn(product){
+	location.href = '../product/index.html?product='+product;
+}
+
+function searchParam(key) {
+	return new URLSearchParams(location.search).get(key);
+};
